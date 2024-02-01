@@ -1,15 +1,47 @@
-# NECTA-SCRAP-2019-2022
-These are the python scripts that download each  individual school CSEE necta results from the year 2019 to 2022, in their respective orders.
+# NECTA-RESULTS-2019-2022
+These Python scripts facilitate the downloading of individual school CSEE NECTA results from the years 2019 to 2022, in their respective orders.
 
-## To do download files Just do this:
-   + Run
+## How to Download Files
+   + clone the project
+```bash
+git clone https://github.com/reprogamaco/DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022.git
+cd DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022
+```
+   + Run the script
 ```python
 python3 start.py
 ```
-### After the program is finished, you will find all school files in their respective folders(Years).
-   + I have calculated that the whole files will take about 990+Mb after downloading.
-   
-## The scraped sites are **necta** official site and **maktaba.tetea.org**.
+After the program finishes, you will find all school files organized in their respective folders (Years).
+The folders format
+```yaml
+DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022
+│
+├── 2019
+│   ├── School1
+│   ├── School2
+│   └── ...
+│
+├── 2020
+│   ├── School1
+│   ├── School2
+│   └── ...
+│
+├── 2021
+│   ├── School1
+│   ├── School2
+│   └── ...
+│
+└── 2022
+    ├── School1
+    ├── School2
+    └── ...
+```
 
-### Remember that Data is very essential Anywhere!!
-### Feel free to report any bugs
+Please note that the total size of all downloaded files is estimated to be around 990+MB.
+   
+## Additional Information
+The data is scraped from two sources: the official NECTA site and maktaba.tetea.org.
+
+
+### Contributing
+Contributions are welcome! The project is designed to be flexible, allowing easy integration of results from future years. Feel free to contribute and improve the project for upcoming NECTA results.
