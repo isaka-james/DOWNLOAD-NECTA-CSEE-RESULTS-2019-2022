@@ -57,7 +57,7 @@ def main():
    url_1="https://maktaba.tetea.org/exam-results/CSEE2019/csee.htm"
    url_2="https://onlinesys.necta.go.tz/results/2020/csee/csee.htm"
    url_3="https://onlinesys.necta.go.tz/results/2021/csee/csee.htm"
-   url_4="https://matokeo.necta.go.tz/csee2022/index.htm"
+   url_4="https://onlinesys.necta.go.tz/results/2022/csee/index.htm"
    
    data1,data2,data3,data4=scrap.returnAllYears(url_1,url_2,url_3,url_4)
    t1,t2,t3,t4=scrap.convToText(data1,data2,data3,data4)
@@ -67,7 +67,7 @@ def main():
    #Get the lists of Htmls
    print("Starting for 2021...")
    for i in list_Three:
-       url=f"https://onlinesys.necta.go.tz/results/2021/csee/results/{i[:5]}.htm"
+       url=f"https://onlinesys.necta.go.tz/results/2021/csee/results/{i[:5].lower()}.htm"
        datas=req.get(url)
        texts=datas.text
        f = open(f"{i[:5]}.htm", "w")
