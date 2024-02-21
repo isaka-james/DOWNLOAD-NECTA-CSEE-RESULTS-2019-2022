@@ -4,7 +4,7 @@ These Python scripts facilitate the downloading of individual school CSEE NECTA 
 ## How to Download Files
    + clone the project
 ```bash
-git clone https://github.com/reprogamaco/DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022.git
+git clone https://github.com/isaka-james/DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022.git
 cd DOWNLOAD-NECTA-CSEE-RESULTS-2019-2022
 ```
    + Run the script
